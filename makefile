@@ -10,7 +10,7 @@ OBJ = Benchmark.o Stopwatch.o Sysinfo.o Write_Result.o md5.o main.o
 BIN = bashmark
 
 $(BIN):  $(OBJ)
-	$(LD) $(LDFLAGS) $(CXXFLAGS) $(OBJ) -o $(BIN)
+	$(LD) $(CXXFLAGS) $(OBJ) $(LDFLAGS) -o $(BIN)
 
 
 Benchmark.o:
