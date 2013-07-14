@@ -1,0 +1,84 @@
+0.6.2:
+- Worked on multithreading for windows (but not complete yet)
+- Some code cleanups
+- Changes to the result saving
+- Disabled the cryption from the result file
+- Fixed a bug in the windows version with the size info
+- Set the ration to -100% when the result is 0. Instat of the 0% befor.
+
+0.6.1: jun 10th.
+- Fixed/Smoothed percent informations about the current state
+- Fixed a strange problem where the first text output just occurs after
+arround a half minute
+- Fixed a problem that lead to a not responding bashmark when using
+threads
+- Made a change to the makefile so that the link flags under gentoo systems
+can be used
+- Fixed a little visual bug which occurs when using '--no-cpu-test' or
+--no-mem-test'
+- Minimal speedup in the intern stopwatch
+
+0.6: march 30th.
+- Added displaying of a status percent value
+- Added '--save-result' to save a file which can be uploaded
+- Added the information about the kb size of your bashmark binary
+- Implemented the system informations for windows systems
+- Renamed the 'mem r/w' test to 'mem r/w (cached)', because it's cachable by
+the l2 cache of the cpu
+- Added the use of the 'uname' command under linux
+
+0.5: march 14th.
+- The intern spended time for each test got rebalanced (hope to get even more precision through it)
+- The multithreading score got (nearly) doubled (cause many got a low result)
+- Updated the ref system
+- I began to save for out of memory conditions
+- I fixed the (hopefully) last bug with amd64 and the system infos
+- Added the compiler and version info for the icc compiler
+
+0.4r3: march, 10th.
+- Fixed a problem on amd64 cpus with the system infos
+
+0.4r2: march, 10th.
+- Fixed a little fault, so now multi cpus get really used! (also it could solve some problems of infinite loops)
+
+0.4: march, 9th.
+- Implemented the use of all cpus (should give the multi cpu systems a big boost :> ), but just for linux yet
+- Fixed the ration (%). It was not correct if you got a higher Score
+- Fixed a Bug in the cpu info filtering
+- Added some new parameters: '--fno-sys-info' , '--no-ref-info','--no-infos' and '--fno-threads'
+- Fixed that in '--secure' mode the head of the table appears after the test( cause it should be before)
+- Added some work arounds for unix systems
+- Updated the reference system
+
+0.3.4: march, 7th.
+- Cleaned up the sysinfo class( so we could soon enhance it :> )
+- Made a little change to the filtering of the cpu string
+- Changed the makefile, so it works with the gentoo ebuild
+
+0.3.3: march, 4th.
+- Added the multithreading test for windows
+
+0.3.2: march, 3rd.
+- Added GCC info
+- Updated the reference system
+- Fixed a cpu info output problem (occurs on multi cpu systems )
+- Made some change to the filtering of the cpu info string
+
+0.3.1: march, 3rd.
+- Filtered some useless stuff from the cpu info string
+- Added a little work around for a compiling problem ( occurs under old Debians )
+- Made a minor change on the reference system infos
+- Changed the makefile
+
+0.3: march, 3rd.
+- Implemented the reference system, so your result gets compared immediately
+- Needed to use the backup of Benchmark.cpp... so we lost the new multithreading test, some defines for windows and some cleaned up code :((
+- Kicked out a linux only posix define( need to find something to replace it!)
+- Little change on the stopwatch (to make a openbsd compiler happy)
+
+0.2: march, 2nd.
+- Added Multithreading tests
+- Kicked out --fast-output
+- Added and updated parameter
+- made some cleanups
+
