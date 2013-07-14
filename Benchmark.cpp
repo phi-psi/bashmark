@@ -18,6 +18,7 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.               *
  ***************************************************************************/
 #include <cstring>
+#include <unistd.h>
 #include "Benchmark.hpp"
 #include "Stopwatch.hpp"
 #include "Main.hpp"

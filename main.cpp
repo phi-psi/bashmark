@@ -20,6 +20,7 @@
 
 #include <sstream>
 #include <cstring>
+#include <unistd.h>
 using std::stringstream;
 
 
