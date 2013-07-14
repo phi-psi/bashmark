@@ -17,7 +17,7 @@
  * along with this software; if not, write to the Free Software            *
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.               *
  ***************************************************************************/
-#include <string>
+#include <cstring>
 #include "Benchmark.hpp"
 #include "Stopwatch.hpp"
 #include "Main.hpp"

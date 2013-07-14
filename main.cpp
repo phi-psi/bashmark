@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include <sstream>
+#include <cstring>
 using std::stringstream;
 
 
